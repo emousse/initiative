@@ -1,18 +1,23 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 body{
   margin: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  // hide overflow on IE11
-  -ms-overflow-x: hidden;
 
   font-size: $text--size-default;
   line-height: 1.75;
   font-family: $font-comfortaa;
 }
 
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
 h2{
-  color: $text-pink;
+  color: $color-pink;
   font-size: $text--size-medium;
 }

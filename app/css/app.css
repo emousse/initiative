@@ -1,14 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Comfortaa:400,700");
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
 body {
   margin: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  -ms-overflow-x: hidden;
   font-size: 16px;
   line-height: 1.75;
   font-family: "Comfortaa", Helvetica, sans-serif; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
 
 h2 {
   color: #f6828c;
@@ -17,7 +22,22 @@ h2 {
 .menu {
   height: 60px;
   background-color: #f6828c;
-  display: flex; }
+  border-bottom: 1px solid #7f6d9b;
+  line-height: 60px;
+  font-weight: 700; }
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+  .menu--center {
+    text-align: center; }
+  .menu--right {
+    float: right;
+    display: flex; }
+  .menu--left {
+    float: left;
+    width: 134px;
+    background-color: #fcf7f8; }
 
 .dropdown {
   position: relative; }
@@ -26,7 +46,7 @@ h2 {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
+  width: 187px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   padding: 12px 16px;
   z-index: 1; }

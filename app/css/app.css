@@ -38,8 +38,9 @@ h2 {
     display: flex; }
     .menu--right-dashboard {
       width: 113px; }
+    .menu--right-inscription {
+      width: 113px; }
     .menu--right-initiative {
-      background-color: #b3e5e1;
       width: 220px; }
   .menu--left {
     float: left;

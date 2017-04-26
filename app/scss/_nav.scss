@@ -4,7 +4,8 @@
     margin: 0;
     padding: 0;
     li{
-      border-right: 1px solid $color-purple;
+      border-right: 1px solid $color-black-medium;
+      padding: 0 20px;
     }
   }
   height: 60px;
@@ -13,26 +14,41 @@
   line-height: 60px;
   font-weight: 700;
   color: $color-purple;
-
+  position: relative;
   text-align: center;
   &--center{
+    // align-items: stretch;
+    // display: flex;
+    // flex-grow: 0;
+    // flex-shrink: 0;
+    // justify-content: center;
+    // margin-left: auto;
+    // margin-right: auto;
+    font-size: $text--size-medium--small;
   }
   &--right{
-    &-dashboard{
-      width: 113px;
-    }
+    float: right;
     &-inscription{
-      width: 113px;
+      float: left;
+    }
+    &-dashboard{
+      float: left;
     }
     &-initiative{
-      width: 220px;
+      float: left;
     }
-    float: right;
-    display: flex;
+    @media (max-width: $mobile){
+      display: none;
+      
+    }
   }
   &--left{
     float: left;
-    width: 134px;
+    span{
+      @media (max-width: $mobile){
+        display: none;
+      }
+    }
   }
 }
 .dropdown{ position: relative; }

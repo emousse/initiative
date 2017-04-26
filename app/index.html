@@ -1,48 +1,69 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="/css/app.css">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="/css/app.css">
+    <title>Document</title>
 </head>
+
 <body>
     <nav class="menu">
-            <ul class="menu--left">
-                <li class="dropdown">
-                    <a class="nav-link d-flex align-content-center pr-3" href="#" >
-                        <i class="fa fa-2x fa-bars" aria-hidden="true"></i>
-                        <span>menu</span>
-                    </a>
+        <ul class="menu--left">
+            <li class="dropdown">
+                <a class="nav-link d-flex align-content-center pr-3" href="#">
+                    <i class="fa fa-2x fa-bars" aria-hidden="true"></i>
+                    <span>menu</span>
+                </a>
 
-                    <div class="dropdown-content" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="{{ path('service_index') }}">plateformes services</a>
-                        <a class="dropdown-item" href="{{ path('btob_index') }}">plateforme B2B</a>
-                        <a class="dropdown-item" href="{{ path('portail_init_homepage') }}">portail des initiatives</a>
-                    </div>
-                </li>
-            </ul>
-            <ul class="menu--right">
-                    <li class="inscription nav-item dropdown" style="">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink">
+                <div class="dropdown-content" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="{{ path('service_index') }}">plateformes services</a>
+                    <a class="dropdown-item" href="{{ path('btob_index') }}">plateforme B2B</a>
+                    <a class="dropdown-item" href="{{ path('portail_init_homepage') }}">portail des initiatives</a>
+                </div>
+            </li>
+        </ul>
+        <ul class="menu--right">
+            <li class="inscription nav-item dropdown" style="">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink">
                             s'inscrire
                         </a>
-                        <div class="dropdown-content" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="{{ path('organization_register') }}">organisation</a>
-                            <a class="dropdown-item" href="{{ path('individual_register') }}">individu</a>
-                        </div>
-                    </li>
-                    <li class="menu--right-dashboard">
-                        <a class="nav-link" href="{{ path('security_login') }}">dashboard</a>
-                    </li>
-                    <li class="menu--right-initiative">
-                        <a class="nav-link" href="{{ path('security_login') }}">créer une initiative</a>
-                    </li>
-            </ul>
-            <a class="menu--center" href="{{ path('app_homepage') }}">Portail Initiatives</a>
+                <div class="dropdown-content" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="{{ path('organization_register') }}">organisation</a>
+                    <a class="dropdown-item" href="{{ path('individual_register') }}">individu</a>
+                </div>
+            </li>
+            <li class="menu--right-dashboard">
+                <a class="nav-link" href="{{ path('security_login') }}">dashboard</a>
+            </li>
+            <li class="menu--right-initiative">
+                <a class="nav-link" href="{{ path('security_login') }}">créer une initiative</a>
+            </li>
+        </ul>
+        <a class="menu--center" href="{{ path('app_homepage') }}">Portail Initiatives</a>
     </nav>
-  <h2>hello</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div class="main-carousel">
+        <div class="carousel-cell" style="background-image: url('http://lorempicsum.com/rio/1920/944/4')">
+        </div>
+        <div class="carousel-cell" style="background-image: url('http://lorempicsum.com/rio/1920/944/5')">
+
+        </div>
+        <div class="carousel-cell" style="background-image: url('http://lorempicsum.com/rio/1920/944/2')">
+
+        </div>
+
+    </div>
+    <h2>hello</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="/js/app.js">
+
+    </script>
 </body>
+
 </html>

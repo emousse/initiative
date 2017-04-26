@@ -63,3 +63,9 @@ h2 {
 
 .dropdown:hover .dropdown-content {
   display: block; }
+
+.carousel-cell {
+  height: 708px;
+  width: 100%;
+  background-position: center center;
+  background-size: cover; }

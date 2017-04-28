@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa:400,700');
 
+@import "bulma/sass/utilities/_all";
+@import "bulma/sass/grid/columns";
 
 @import "fonts";
 @import "vars";
@@ -10,3 +12,5 @@
 @import "base";
 @import "nav";
 @import "carousel";
+@import "button";
+@import "section"

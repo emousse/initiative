@@ -49,7 +49,6 @@
 
     &--left {
         float: left;
-        display: block;
         span {
             @media (max-width: $mobile) {
                 display: none;
@@ -66,7 +65,6 @@
     a {
         display: block;
         transition: all 0.45s;
-
         &:hover {
             background-color: $color-turquoise;
         }

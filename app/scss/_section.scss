@@ -1,4 +1,18 @@
 .section{
-  margin-top: 20px;
   background-color: $color-black-medium;
+  .level{
+    border-bottom: 1px solid #ccc;
+  }
+  .test{
+    position: relative;
+    @media (max-width: $mobile) {
+      display: none;
+    }
+    .slant{
+      position: absolute;
+      padding: 12px;
+      top: 0; right: 0; left: 0; bottom: 0;
+      background-image: linear-gradient(260deg, $color-black-medium 14%, transparent 4.04%);
+    }
+  }
 }

@@ -597,6 +597,7 @@ a {
   color: inherit; }
 
 h2 {
+  margin: 0;
   color: #f6828c;
   font-size: 24px; }
 
@@ -704,20 +705,43 @@ h2 {
   display: inline-block;
   font-size: 16px; }
 
-.section {
-  background-color: #1f1f1f; }
-  .section .level {
-    border-bottom: 1px solid #ccc; }
-  .section .test {
+.section--menu {
+  background-color: #1f1f1f;
+  margin-bottom: 25px; }
+  .section--menu .level p {
+    border-bottom: 2px solid #ccc; }
+    .section--menu .level p:hover {
+      border-bottom: 2px solid #f6828c; }
+  .section--menu .test {
     position: relative; }
     @media (max-width: 768px) {
-      .section .test {
+      .section--menu .test {
         display: none; } }
-    .section .test .slant {
+    .section--menu .test .slant {
       position: absolute;
       padding: 12px;
       top: 0;
       right: 0;
       left: 0;
       bottom: 0;
-      background-image: linear-gradient(260deg, #1f1f1f 14%, transparent 4.04%); }
+      background-image: linear-gradient(264deg, #1f1f1f 14%, transparent 4.04%); }
+
+.box {
+  display: block;
+  padding: 1.25rem; }
+
+.agenda {
+  background-color: #b3e5e1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; }
+
+.highlight {
+  background-image: url("http://lorempicsum.com/futurama/627/400/4");
+  padding: 1.25rem; }
+  .highlight--effect {
+    border: 1px solid #fcf7f8;
+    height: 100%; }
+    .highlight--effect-center {
+      text-align: center; }

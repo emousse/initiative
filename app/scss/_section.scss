@@ -1,50 +1,97 @@
-.section--menu{
-  background-color: $color-black-medium;
-  margin-bottom: 25px;
-  .level{
-    p{
-      border-bottom: 2px solid #ccc;
-      &:hover{
-        border-bottom: 2px solid $color-pink;
-      }
-    }
-
-  }
-  .test{
-    position: relative;
-    @media (max-width: $mobile) {
-      display: none;
-    }
-    .slant{
-      position: absolute;
-      padding: 12px;
-      top: 0; right: 0; left: 0; bottom: 0;
-      background-image: linear-gradient(264deg, $color-black-medium 14%, transparent 4.04%);
-    }
-  }
+.section {
+    margin-bottom: 30px;
 }
 
-.box{
-  display: block;
-  padding: 1.25rem;
+.section--menu {
+    background-color: $color-black-medium;
+
+    .level {
+        p {
+            border-bottom: 2px solid #ccc;
+
+            &:hover {
+                border-bottom: 2px solid $color-pink;
+            }
+        }
+    }
+
+    .test {
+        position: relative;
+        @media (max-width: $mobile) {
+            display: none;
+        }
+
+        .slant {
+            position: absolute;
+            padding: 12px;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background-image: linear-gradient(264deg, $color-black-medium 14%, transparent 4.04%);
+        }
+    }
 }
 
-.agenda{
-  background-color: $color-turquoise;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+.programme {
+  margin-bottom: 40px;
+    &-title {
+        text-align: center;
+        position: relative;
+        margin-bottom: 60px;
+        font-size: 18px;
+        font-weight: bold;
+        &:before {
+            content: '';
+            position: absolute;
+            border-bottom: 2px #ccc solid;
+            right: 0;
+            left: 0;
+            top: 50%;
+            z-index: -2;
+        }
+        span {
+          padding: 0 20px;
+            color: $color-black-medium;
+            background-color: white;
+        }
+    }
 }
 
-.highlight{
-  background-image: url('http://lorempicsum.com/futurama/627/400/4');
-  padding: 1.25rem;
-  &--effect{
-    border: 1px solid $color-default;
+.box {
+    display: block;
+    padding: 1.25rem;
+}
+
+.rounded {
+    border: 1px black solid;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.agenda {
+    background-color: $color-turquoise;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
-    &-center{
-      text-align: center;
+}
+
+.highlight {
+    background-image: url('http://lorempicsum.com/futurama/627/400/4');
+    padding: 1.25rem;
+
+    &--effect {
+        border: 1px solid $color-default;
+        height: 100%;
+
+        &-center {
+            text-align: center;
+        }
     }
-  }
 }

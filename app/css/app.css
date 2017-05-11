@@ -627,7 +627,9 @@ h2 {
   line-height: 60px;
   font-weight: 700;
   color: #7f6d9b;
-  text-align: center; }
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 9999; }
   .menu ul {
     list-style-type: none;
     margin: 0;
@@ -705,9 +707,11 @@ h2 {
   display: inline-block;
   font-size: 16px; }
 
+.section {
+  margin-bottom: 30px; }
+
 .section--menu {
-  background-color: #1f1f1f;
-  margin-bottom: 25px; }
+  background-color: #1f1f1f; }
   .section--menu .level p {
     border-bottom: 2px solid #ccc; }
     .section--menu .level p:hover {
@@ -726,9 +730,40 @@ h2 {
       bottom: 0;
       background-image: linear-gradient(264deg, #1f1f1f 14%, transparent 4.04%); }
 
+.programme {
+  margin-bottom: 40px; }
+  .programme-title {
+    text-align: center;
+    position: relative;
+    margin-bottom: 60px;
+    font-size: 18px;
+    font-weight: bold; }
+    .programme-title:before {
+      content: '';
+      position: absolute;
+      border-bottom: 2px #ccc solid;
+      right: 0;
+      left: 0;
+      top: 50%;
+      z-index: -2; }
+    .programme-title span {
+      padding: 0 20px;
+      color: #1f1f1f;
+      background-color: white; }
+
 .box {
   display: block;
   padding: 1.25rem; }
+
+.rounded {
+  border: 1px black solid;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 .agenda {
   background-color: #b3e5e1;
@@ -745,3 +780,6 @@ h2 {
     height: 100%; }
     .highlight--effect-center {
       text-align: center; }
+
+footer {
+  background-color: #1f1f1f; }

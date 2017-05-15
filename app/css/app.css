@@ -708,7 +708,8 @@ h2 {
   font-size: 16px; }
 
 .section {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  background-color: #ccc; }
 
 .section--menu {
   background-color: #1f1f1f; }
@@ -750,6 +751,22 @@ h2 {
       padding: 0 20px;
       color: #1f1f1f;
       background-color: white; }
+
+.calendar-left {
+  position: relative; }
+
+.calendar .slant {
+  position: absolute;
+  padding: 12px;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(264deg, #1f1f1f 14%, transparent 4.04%); }
+
+.calendar-right .calendar {
+  width: 100%;
+  box-sizing: border-box; }
 
 .box {
   display: block;

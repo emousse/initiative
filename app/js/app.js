@@ -1,8 +1,17 @@
+
+//initialise carousel flickity
 var elem = document.querySelector('.main-carousel');
 var flkty = new Flickity(elem, {
     // options
     cellAlign: 'left',
     contain: true
+});
+
+//initialise flatpicker
+// flatpickr('.calendar-flatpickr', {inline: true});
+
+$("#calendar").kendoCalendar({
+    culture: "de-DE"
 });
 
 var className = "is-active";

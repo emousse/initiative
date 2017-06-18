@@ -11,7 +11,8 @@ var flkty = new Flickity(elem, {
 // flatpickr('.calendar-flatpickr', {inline: true});
 
 $("#calendar").kendoCalendar({
-    culture: "de-DE"
+    culture: "fr-FR",
+    footer: false
 });
 
 var className = "is-active";

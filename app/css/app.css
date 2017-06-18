@@ -694,7 +694,19 @@ h2 {
       height: 320px; } }
 
 .flickity-page-dots {
-  bottom: 0px; }
+  bottom: 20px; }
+
+/* white circles */
+.flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid white; }
+
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: white; }
 
 .button {
   background-color: #b3e5e1;
@@ -708,8 +720,7 @@ h2 {
   font-size: 16px; }
 
 .section {
-  margin-bottom: 30px;
-  background-color: #ccc; }
+  margin-bottom: 30px; }
 
 .section--menu {
   background-color: #1f1f1f; }
@@ -752,21 +763,26 @@ h2 {
       color: #1f1f1f;
       background-color: white; }
 
-.calendar-left {
-  position: relative; }
-
-.calendar .slant {
-  position: absolute;
-  padding: 12px;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background-image: linear-gradient(264deg, #1f1f1f 14%, transparent 4.04%); }
-
-.calendar-right .calendar {
-  width: 100%;
-  box-sizing: border-box; }
+.calendar {
+  background-color: #1f1f1f; }
+  .calendar-left {
+    position: relative; }
+  .calendar-middle {
+    height: 100%;
+    position: relative;
+    background-position: center center;
+    background-size: cover; }
+    @media (max-width: 768px) {
+      .calendar-middle {
+        display: none; } }
+    .calendar-middle .slant {
+      position: absolute;
+      padding: 12px;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-image: linear-gradient(86deg, #1f1f1f 18%, transparent 4.04%); }
 
 .box {
   display: block;
@@ -790,13 +806,26 @@ h2 {
   height: 100%; }
 
 .highlight {
-  background-image: url("http://lorempicsum.com/futurama/627/400/4");
+  background-image: url("../images/dim/Gaea21MSS-kid-52017.jpg");
+  background-position: center center;
+  background-size: cover;
   padding: 1.25rem; }
   .highlight--effect {
     border: 1px solid #fcf7f8;
-    height: 100%; }
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
     .highlight--effect-center {
       text-align: center; }
+
+.calendar-right {
+  background-color: #7f6d9b;
+  text-align: center; }
+
+.k-calendar {
+  background-color: #7f6d9b;
+  border: transparent; }
 
 footer {
   background-color: #1f1f1f; }
